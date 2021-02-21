@@ -1,1 +1,1 @@
-export {default as SVGSprites} from './SVGSprites';
+export {default as Header} from './Header';

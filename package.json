@@ -16,6 +16,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.32.4",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-source-contentful": "^4.6.2",
     "react": "^16.12.0",

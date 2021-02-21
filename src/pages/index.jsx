@@ -1,6 +1,11 @@
-import React from "react";
-import '../styles/index.scss';
+import React from "react"
+import "../styles/index.scss"
+import { Header } from "../components"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
