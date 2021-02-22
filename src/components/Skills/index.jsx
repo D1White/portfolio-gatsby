@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import useMouse from '@react-hook/mouse-position'
 import './skills.scss'
 import { Grid } from '../index'
@@ -6,11 +6,17 @@ import { SkillSection } from './SkillSection'
 import skills from '../../assets/skills.json'
 
 const Skills = () => {
-  const ref = React.useRef(null);
-  const mouse = useMouse(ref, {
-    enterDelay: 100,
-    leaveDelay: 100,
-  });
+  const ref = useRef(null);
+  const [mouse, setMouse] = useState(null)
+  
+  useEffect(() => {
+    setMouse(useMouse(ref, {
+      enterDelay: 100,
+      leaveDelay: 100,
+    }));
+  }, [])
+
+
 
   return (
     <div className="skills" ref={ref}>
@@ -24,7 +30,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <Grid mousePos={{ x: mouse.x, y: mouse.y }} />
+      <Grid mousePos={ mouse ? { x: mouse.x, y: mouse.y } : { x: 0, y: 0 }} />
     </div>
   )
 }
