@@ -25,3 +25,11 @@ body {
   height: 50px;
   fill: $dark_main;
 }
+
+.block__header {
+  font-size: 64px;
+  line-height: 130%;
+  text-decoration-line: underline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

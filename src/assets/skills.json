@@ -1,0 +1,34 @@
+{
+  "frontend": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "JavaScript",
+    "ReactJS",
+    "React Router",
+    "Redux",
+    "MobX",
+    "GraphQL",
+    "Gulp",
+    "Gatsby"
+  ],
+  "backend": [
+    "NodeJS",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "FaunaDB",
+    "REST API",
+    "GraphQL"
+  ],
+  "other": [
+    "GIT/GitHub",
+    "Figma",
+    "Photoshop",
+    "Avocode",
+    "npm",
+    "Axios",
+    "JSON",
+    "Firebase"
+  ]
+}

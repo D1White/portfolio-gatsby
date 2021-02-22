@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.scss'
 import Logo from '../../assets/icons/logo.inline.svg'
+import MobMenuIcon from '../../assets/icons/mob_menu.inline.svg'
 
 const Header = () => {
   const [theme, setTheme] = React.useState(false)
@@ -27,6 +28,7 @@ const Header = () => {
               onClick={themeSwitcher}
             />
           </nav>
+          <MobMenuIcon className='header__mob-menu' />
         </div>
       </div>
     </header>
