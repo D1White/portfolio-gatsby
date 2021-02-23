@@ -10,7 +10,7 @@ const isBrowser = typeof window !== `undefined`;
 const Skills = () => {
   const ref = useRef(null);
 
-  if (!isBrowser) {
+  if (!isBrowser) { //SSR hack
     global.window = {}; 
   }
 
@@ -23,7 +23,7 @@ const Skills = () => {
     <div className="skills" ref={ref}>
       <div className="container">
         <div className="skills__content">
-          <h2 className="block__header">Skills</h2>
+          <h2 className="block__title">Skills</h2>
           <div className="skills__block">
             <SkillSection title="Frontend" list={skills.frontend} />
             <SkillSection title="Backend" list={skills.backend} />
