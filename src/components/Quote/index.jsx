@@ -2,7 +2,7 @@ import React from 'react'
 import './quote.scss'
 import Logo from '../../assets/icons/logo.inline.svg'
 
-const index = () => {
+const Quote = () => {
   return (
     <div className="quote">
       <div className="container">
@@ -21,4 +21,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Quote
