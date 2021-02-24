@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.contacts {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__email {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: $dark_main;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    margin-left: 50px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &>button {
+      height: 48px;
+      width: 49px;
+      background-position: center center;
+      background-size: cover;
+
+      &.telegram {
+        background-image: url(../../assets/icons/telegram.svg);
+      }
+      &.github {
+        background-image: url(../../assets/icons/github.svg);
+      }
+      &.behaunce {
+        background-image: url(../../assets/icons/behaunce.svg);
+      }
+      &.habr {
+        background-image: url(../../assets/icons/habr.svg);
+      }
+    }
+  }
+}

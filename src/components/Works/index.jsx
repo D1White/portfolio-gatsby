@@ -48,7 +48,7 @@ const Works = () => {
                 <h3 className="works__title">SOON</h3>
                 <div className="works__soon">
                   <span className="works__soon__text">
-                    I am learning something new every day. A new and interesting
+                    I am learn something new every day. A new and interesting
                     project will appear here soon.
                   </span>
                 </div>
@@ -61,15 +61,5 @@ const Works = () => {
     </div>
   )
 }
-
-// export const query = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//       }
-//     }
-//   }
-// `
 
 export default Works
