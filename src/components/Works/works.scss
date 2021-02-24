@@ -125,6 +125,12 @@
     align-items: center;
     justify-content: center;
 
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: lighten($dark_main, 10%)
+    }
+
     &__text {
       font-size: 24px;
       letter-spacing: 1.5px;
@@ -136,10 +142,6 @@
       height: 24px;
       width: auto;
       fill: $light_main;
-
-      &>g>path {
-        fill: $light_main;
-      }
     }
   }
 }

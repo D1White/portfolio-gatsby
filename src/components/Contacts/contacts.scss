@@ -19,6 +19,11 @@
     font-size: 24px;
     margin-bottom: 40px;
     color: $dark_main;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $light_blue;
+    }
   }
 
   &__buttons {
@@ -29,28 +34,40 @@
 
   &__button {
     margin-left: 50px;
+    transition: transform 0.2s;
 
     &:first-child {
       margin-left: 0;
     }
 
+    &:hover {
+      transform: scale(1.1);
+    }
+
     &>button {
       height: 48px;
       width: 49px;
-      background-position: center center;
-      background-size: cover;
+      background-color:  $dark_main;
+      mask-size: cover;
+      mask-position: center;
+
+      transition: tarnsform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       &.telegram {
-        background-image: url(../../assets/icons/telegram.svg);
+        mask-image: url(../../assets/icons/telegram.svg);
       }
       &.github {
-        background-image: url(../../assets/icons/github.svg);
+        mask-image: url(../../assets/icons/github.svg);
       }
       &.behaunce {
-        background-image: url(../../assets/icons/behaunce.svg);
+        mask-image: url(../../assets/icons/behaunce.svg);
       }
       &.habr {
-        background-image: url(../../assets/icons/habr.svg);
+        mask-image: url(../../assets/icons/habr.svg);
       }
     }
   }
