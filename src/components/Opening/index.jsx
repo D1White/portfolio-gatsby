@@ -5,7 +5,7 @@ import ArrowIcon from '../../assets/icons/arrow.inline.svg'
 
 const Opening = () => {
   return (
-    <div className="opening">
+    <div className="opening" id='opening'>
       <div className="container">
         <div className="opening__content">
           <img src={avatar} alt="avatar" className="opening__avatar" />

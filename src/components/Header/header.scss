@@ -80,7 +80,12 @@
       color: lighten($dark_main, 30%);
     }
 
-    &.active {
+    &>a {
+      color: $dark_main;
+      transition: color 0.2s;
+    }
+
+    &>.active {
       color: $light_blue;
     }
   }

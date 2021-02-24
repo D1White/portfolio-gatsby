@@ -20,7 +20,7 @@ const Skills = () => {
   });
 
   return (
-    <div className="skills" ref={ref}>
+    <div className="skills" id='skills' ref={ref}>
       <div className="container">
         <div className="skills__content">
           <h2 className="block__title">Skills</h2>

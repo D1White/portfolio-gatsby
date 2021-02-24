@@ -4,7 +4,7 @@ import { ContactButton } from './ContactButton'
 
 const Contacts = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id='contacts'>
       <div className="container">
         <div className="contacts__content">
           <h2 className="block__title">Contacts</h2>

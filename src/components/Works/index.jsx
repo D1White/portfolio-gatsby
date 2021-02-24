@@ -28,7 +28,7 @@ const Works = () => {
   `)
 
   return (
-    <div className="works">
+    <div className="works" id='works'>
       <div className="container">
         <div className="works__content">
           <h2 className="block__title">Works</h2>
