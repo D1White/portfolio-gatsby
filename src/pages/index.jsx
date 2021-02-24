@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/index.scss"
-import { Header, Opening, Skills, Works, Contacts } from "../components"
+import { Header, Opening, Skills, Works, Contacts, Quote } from "../components"
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Skills />
       <Works />
       <Contacts />
+      <Quote />
     </>
   )
 }

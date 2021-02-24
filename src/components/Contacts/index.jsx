@@ -2,7 +2,7 @@ import React from 'react'
 import './contacts.scss'
 import { ContactButton } from './ContactButton'
 
-const index = () => {
+const Contacts = () => {
   return (
     <div className="contacts">
       <div className="container">
@@ -24,4 +24,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Contacts
