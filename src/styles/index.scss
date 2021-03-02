@@ -1,5 +1,6 @@
 @import './normalize.scss';
 @import './variables.scss';
+@import './dark_theme.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap');
 
 
@@ -12,6 +13,8 @@ body {
   font-weight: 500;
   color: $dark_main;
   background: $light_main;
+
+  transition: background 0.2s, color 0.2s;
 }
 
 .container {

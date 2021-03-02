@@ -47,11 +47,11 @@
     &>button {
       height: 48px;
       width: 49px;
-      background-color:  $dark_main;
+      background-color: $dark_main;
       mask-size: cover;
       mask-position: center;
 
-      transition: tarnsform 0.3s;
+      transition: tarnsform 0.3s, background-color 0.2s;
 
       &:hover {
         transform: scale(1.1);

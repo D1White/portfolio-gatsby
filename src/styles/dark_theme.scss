@@ -1,0 +1,101 @@
+@import './variables.scss';
+
+html[theme="dark"] {
+  body {
+    color: $light_main;
+    background: $dark_main;
+  }
+
+  .header {
+    background-color: $dark_main;
+
+    &__logo {
+      &>path {
+        fill: $light_main;
+      }
+      &>rect {
+        stroke: $light_main;
+      }
+    }
+  }
+
+  .nav__link {
+    &>a {
+      color: $light_main;
+    }
+    &>.active {
+      color: $light_blue;
+    }
+  }
+
+  .opening {
+    &__avatar {
+      border: 2px solid $light_main;
+    }
+
+    &__arrow {
+      border: 3px solid $light_main;
+
+      &>svg>path {
+        fill: $light_main;
+      }
+    }
+  }
+
+  .skills__section {
+    background-color: $dark_main;
+    border: $light_main solid 2px;
+  }
+
+  .works {
+    &__item {
+      &::before {
+        border: 2px solid $light_main;
+      }
+    }
+
+    &__button {
+      background-color: $light_main;
+
+      &:hover {
+        background-color: darken($light_main, 10%)
+      }
+
+      &__text {
+        color: $dark_main;
+      }
+
+      &__ico {
+        fill: $dark_main;
+      }
+    }
+  }
+
+  .contacts {
+    &__email {
+      color: $light_main;
+      &:hover {
+        color: $light_blue;
+      }
+    }
+
+    &__button {
+      &>button {
+        background-color: $light_main;
+      }
+    }
+  }
+
+  .quote__logo {
+    &>path {
+      fill: $light_main;
+    }
+    &>rect {
+      stroke: $light_main;
+    }
+  }
+
+  .footer {
+    background-color: $dark_main;
+  }
+}

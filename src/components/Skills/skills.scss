@@ -26,6 +26,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    transition: background-color 0.2s, border 0.2s;
   }
 
   &__header {

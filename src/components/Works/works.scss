@@ -85,6 +85,8 @@
       border: 2px solid $dark_main;
       top: calc(50% - 2px);
       left: 0;
+
+      @include transition(border);
     }
 
     &:first-child {
@@ -136,12 +138,16 @@
       letter-spacing: 1.5px;
       margin-right: 10px;
       color: $light_main;
+
+      @include transition(color);
     }
 
     &__ico {
       height: 24px;
       width: auto;
       fill: $light_main;
+
+      @include transition(fill);
     }
   }
 }

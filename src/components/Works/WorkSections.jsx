@@ -36,7 +36,7 @@ export const WorkSections = ({ title, items, deployUrl, githubUrl, imgUrl }) => 
           </a>
         </div>
       </div>
-      <img src={`https:${imgUrl}`} alt="work" className="works__image" />
+      <img src={`https:${imgUrl}`} alt="work" className="works__image"  />
     </div>
   )
 }
