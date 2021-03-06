@@ -7,7 +7,7 @@ import MobMenuIcon from '../../assets/icons/mob_menu.inline.svg'
 
 
 const Header = () => {
-  const [theme, setTheme] = useState(false)
+  const [theme, setTheme] = useState('light')
   const [scroll, setScroll] = useState(false)
 
   const handleScroll = () => {
@@ -20,23 +20,33 @@ const Header = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    if (localStorage.getItem('site_theme')) {
+      setTheme(localStorage.getItem('site_theme'));
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', handleScroll);
     }
   }, [])
 
   useEffect(() => {
-    if (theme) {
-      document.documentElement.setAttribute('theme', 'dark');
+    if (theme === 'light') {
+      document.documentElement.setAttribute('theme', theme);
+      localStorage.setItem('site_theme', theme);
     }else {
-      document.documentElement.setAttribute('theme', 'light');
+      document.documentElement.setAttribute('theme', theme);
+      localStorage.setItem('site_theme', theme);
     }
   }, [theme])
 
   const themeSwitcher = () => {
-    setTheme(!theme)
+    if (theme === 'light') {
+      setTheme('dark');
+    }else {
+      setTheme('light');
+    } 
   }
 
   return (
@@ -93,7 +103,7 @@ const Header = () => {
             </ul>
             <input
               type="button"
-              className={`header__theme-btn ${theme ? 'light' : 'dark'}`}
+              className={`header__theme-btn ${theme !== 'light' ? 'light' : 'dark'}`}
               onClick={themeSwitcher}
             />
           </nav>
