@@ -1,10 +1,12 @@
 import React from 'react'
+import OnVisible from 'react-on-visible'
+
 import LinkArrow from '../../assets/icons/link_arrow.inline.svg'
 import GithubIco from '../../assets/icons/github.inline.svg'
 
 export const WorkSections = ({ title, items, deployUrl, githubUrl, imgUrl }) => {
   return (
-    <div className="works__section">
+    <OnVisible className="works__section" percent={10}>
       <div className="works__info">
         <h3 className="works__title">{title}</h3>
         <ul className="works__technologies">
@@ -36,7 +38,7 @@ export const WorkSections = ({ title, items, deployUrl, githubUrl, imgUrl }) => 
           </a>
         </div>
       </div>
-      <img src={`https:${imgUrl}`} alt="work" className="works__image"  />
-    </div>
+      <img src={`https:${imgUrl}`} alt="work" className="works__image" loading="lazy" decoding="async" />
+    </OnVisible>
   )
 }

@@ -8,7 +8,7 @@ const Opening = () => {
     <div className="opening" id='opening'>
       <div className="container">
         <div className="opening__content">
-          <img src={avatar} alt="avatar" className="opening__avatar" />
+          <img src={avatar} alt="avatar" className="opening__avatar" draggable="false" />
           <span className="opening__subtitle" role="img" aria-label="waving hand">
             Hi, I'm Danylo Bilyi 👋
           </span>

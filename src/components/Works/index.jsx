@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import OnVisible from 'react-on-visible'
 import './works.scss'
 import { WorkSections } from './WorkSections'
 import pc from '../../assets/img/pc_img.jpg'
@@ -13,9 +14,6 @@ const Works = () => {
           name
           technologies
           image {
-            # file {
-            #   url
-            # }
             resize(height: 680) {
               src
             }
@@ -43,7 +41,7 @@ const Works = () => {
                 key={work.id}
               />
             ))}
-            <div className="works__section">
+            <OnVisible className="works__section" percent={10}>
               <div className="works__info">
                 <h3 className="works__title">SOON</h3>
                 <div className="works__soon">
@@ -54,7 +52,7 @@ const Works = () => {
                 </div>
               </div>
               <img src={pc} alt="work" className="works__image" />
-            </div>
+            </OnVisible>
           </div>
         </div>
       </div>

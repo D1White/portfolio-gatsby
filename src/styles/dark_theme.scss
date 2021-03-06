@@ -6,6 +6,15 @@ html[theme="dark"] {
     background: $dark_main;
   }
 
+  ::selection {
+    color: $dark_main;
+    background-color: $light_main;
+  }
+  ::-moz-selection {
+    color: $dark_main;
+    background-color: $light_main;
+  }
+
   .header {
     background-color: $dark_main;
 

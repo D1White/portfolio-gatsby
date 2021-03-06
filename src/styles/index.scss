@@ -17,6 +17,15 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
+::selection {
+  color: $light_main;
+  background-color: $dark_main;
+}
+::-moz-selection {
+  color: $light_main;
+  background-color: $dark_main;
+}
+
 .container {
   width: 100%;
   max-width: 1170px;
