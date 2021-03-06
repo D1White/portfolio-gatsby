@@ -19,11 +19,11 @@ body {
 
 ::selection {
   color: $light_main;
-  background-color: $dark_main;
+  background-color: lighten($dark_main, 10);
 }
 ::-moz-selection {
   color: $light_main;
-  background-color: $dark_main;
+  background-color: lighten($dark_main, 10);
 }
 
 .container {

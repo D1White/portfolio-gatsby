@@ -8,11 +8,11 @@ html[theme="dark"] {
 
   ::selection {
     color: $dark_main;
-    background-color: $light_main;
+    background-color: darken($light_main, 10);
   }
   ::-moz-selection {
     color: $dark_main;
-    background-color: $light_main;
+    background-color: darken($light_main, 10);
   }
 
   .header {
