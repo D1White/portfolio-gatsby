@@ -7,6 +7,7 @@
   background-color: $light_main;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: fixed;
   z-index: 5;
 
@@ -66,6 +67,10 @@
     display: flex;
     align-items: center;
     margin-right: 131px;
+
+    @include _979 {
+      margin-right: 60px;
+    }
   }
 
   &__link {

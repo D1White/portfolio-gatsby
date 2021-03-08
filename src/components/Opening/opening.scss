@@ -1,13 +1,31 @@
 @import '../../styles/variables.scss';
+@import '../../styles/media_mixin.scss';
 
 .opening {
   height: 100vh;
   padding-top: 88px;
+  display: flex;
+  justify-content: center;
 
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include _979 {
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include _768 {
+      height: calc(100% - 120px);
+    }
   }
 
   &__avatar {
@@ -17,6 +35,10 @@
     margin-top: 70px;
 
     @include transition(border);
+    @include _600 {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__subtitle {
@@ -25,6 +47,13 @@
     font-size: 36px;
     letter-spacing: -0.07em;
     margin-top: 38px;
+
+    @include _1170 {
+      font-size: 30px;
+    }
+    @include _600 {
+      font-size: 18px;
+    }
   }
 
   &__title {
@@ -33,6 +62,21 @@
     line-height: 130%;
     text-align: center;
     margin-top: 57px;
+
+    @include _1170 {
+      font-size: 51px;
+    }
+    @include _979 {
+      width: 100%;
+      font-size: 48px;
+      letter-spacing: -1px;
+    }
+    @include _768 {
+      font-size: 36px;
+    }
+    @include _600 {
+      font-size: 23px;
+    }
   }
 
   &__arrow {
@@ -44,12 +88,33 @@
     position: relative;
 
     @include transition(border);
+    @include _979 {
+      margin-top: 0;
+      margin-bottom: 70px;
+    }
+    @include _768 {
+      margin-bottom: 50px;
+    }
+    @include _600 {
+      width: 60px;
+      height: 60px;
+    }
+    @include _350 {
+      display: none;
+    }
+    
 
     &>svg {
       position: absolute;
       top: calc(50% - 18px);
       left: calc(50% - 12px);
       animation: arrow_anim ease-in-out 1s infinite alternate;
+
+      @include _600 {
+        width: 17px;
+        height: auto;
+        left: calc(50% - 6.5px);
+      }
     }
   }
 }

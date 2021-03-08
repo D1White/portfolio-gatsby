@@ -1,6 +1,7 @@
 @import './normalize.scss';
 @import './variables.scss';
 @import './dark_theme.scss';
+@import './media_mixin.scss';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap');
 
 
@@ -29,7 +30,15 @@ body {
 .container {
   width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
+  padding: 0 auto;
+
+  @include _1170 {
+    padding: 0 50px;
+    max-width: 100%;
+  }
+  @include _768 {
+    padding: 0 25px;
+  }
 }
 
 .icon {
@@ -44,4 +53,8 @@ body {
   text-decoration-line: underline;
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @include _768 {
+    font-size: 48px;
+  }
 }
