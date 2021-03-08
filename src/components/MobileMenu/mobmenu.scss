@@ -1,0 +1,73 @@
+@import '../../styles/variables.scss';
+
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: $light_main;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: mob-menu-open 0.7s ease-in-out;
+
+  &.close {
+    animation: mob-menu-close 0.5s ease-in-out;
+  }
+  
+  &__close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../../assets/icons/close.svg');
+    top: 20px;
+    left: calc(100% - 50px);
+  }
+
+  &__logo {
+    height: 55px;
+    width: auto;
+    margin-top: 40px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &>a {
+      font-size: 36px;
+      font-weight: 500;
+      color: $dark_main;
+      transition: color 0.2s;
+    }
+
+    &>.active {
+      color: $light_blue;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes mob-menu-open {
+  from { top: -100%; }
+  to { top: 0; }
+ }
+@keyframes mob-menu-close {
+  from { top: 0; }
+  to { top: -100%; }
+ }

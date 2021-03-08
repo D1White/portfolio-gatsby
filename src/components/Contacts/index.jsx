@@ -1,6 +1,6 @@
 import React from 'react'
 import './contacts.scss'
-import { ContactButton } from './ContactButton'
+import { ContactButton } from '../index'
 
 const Contacts = () => {
   return (

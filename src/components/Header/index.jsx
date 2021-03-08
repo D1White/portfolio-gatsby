@@ -6,7 +6,7 @@ import Logo from '../../assets/icons/logo.inline.svg'
 import MobMenuIcon from '../../assets/icons/mob_menu.inline.svg'
 
 
-const Header = () => {
+const Header = ({ setMobMenu }) => {
   const [theme, setTheme] = useState('light')
   const [scroll, setScroll] = useState(false)
 
@@ -67,7 +67,7 @@ const Header = () => {
                   Main
                 </Link>
               </li>
-              <li className="nav__link active">
+              <li className="nav__link">
                 <Link
                   to="skills"
                   activeClass="active"
@@ -107,7 +107,7 @@ const Header = () => {
               onClick={themeSwitcher}
             />
           </nav>
-          <MobMenuIcon className="header__mob-menu" />
+          <MobMenuIcon className="header__mob-menu" onClick={() => setMobMenu(true)} />
         </div>
       </div>
     </header>
