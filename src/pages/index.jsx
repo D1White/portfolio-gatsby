@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/index.scss"
-import { Header, Opening, Skills, Works, Contacts, Quote, Footer, MobileMenu } from "../components"
+import { Header, Opening, Skills, Works, Contacts, Quote, Footer, MobileMenu, SEO } from "../components"
 
 export default function Home() {
 
@@ -8,6 +8,7 @@ export default function Home() {
 
   return (
     <>
+      <SEO title={'Portfolio'} />
       { mobMenu && <MobileMenu setMobMenu={setMobMenu} /> }
       <Header setMobMenu={setMobMenu} />
       <Opening />

@@ -1,12 +1,11 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-if (process.env.NODE_ENV === "development") {
-  require("dotenv").config();
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config()
 }
- module.exports = {
+module.exports = {
+  siteMetadata: {
+    title: `Danylo Bilyi`,
+    description: `Front-end developer passionate about creating beautiful user-friendly apps.`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -17,12 +16,13 @@ if (process.env.NODE_ENV === "development") {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
