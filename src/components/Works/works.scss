@@ -116,7 +116,7 @@
   &__technologies {
     // width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 
     @include _979 {
       flex-direction: row;
@@ -150,6 +150,9 @@
       left: 0;
 
       @include transition(border);
+      @include _979 {
+        top: calc(50% - 3px);
+      }
     }
 
     &:first-child {
@@ -175,7 +178,7 @@
       line-height: 20px;
     }
   }
-  
+
   &__soon {
     width: 500px;
     height: 100%;
@@ -230,7 +233,7 @@
     transition: background-color 0.2s;
 
     &:hover {
-      background-color: lighten($dark_main, 10%)
+      background-color: lighten($dark_main, 10%);
     }
 
     &__text {

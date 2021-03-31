@@ -2,10 +2,9 @@
   "frontend": [
     "HTML",
     "CSS",
-    "SASS",
+    "SCSS",
     "JavaScript",
     "ReactJS",
-    "React Router",
     "Redux",
     "MobX",
     "GraphQL",
@@ -18,6 +17,7 @@
     "MongoDB",
     "Mongoose",
     "FaunaDB",
+    "PostgeSQL",
     "REST API",
     "GraphQL"
   ],
@@ -29,6 +29,7 @@
     "npm",
     "Axios",
     "JSON",
-    "Firebase"
+    "Firebase",
+    "Docker"
   ]
 }
