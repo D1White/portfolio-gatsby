@@ -1,28 +1,29 @@
 .grid {
-	pointer-events: none;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	display: grid;
-	grid-template-columns: repeat(50,2%);
-	grid-template-rows: repeat(50,2%);
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
   z-index: -1;
+  overflow: hidden;
 }
 
 .grid__item {
-	position: relative;
+  position: relative;
   filter: blur(5px);
 
-  transition: transform .4s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .grid__item-img {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
 
   &.img-1 {
     background-image: url(../../assets/icons/chrome.svg);
@@ -45,140 +46,139 @@
   &.img-7 {
     background-image: url(../../assets/icons/git.svg);
   }
-  &.img-8{
+  &.img-8 {
     background-image: url(../../assets/icons/github.svg);
   }
-  &.img-9{
+  &.img-9 {
     background-image: url(../../assets/icons/graphql.svg);
   }
-  &.img-10{
+  &.img-10 {
     background-image: url(../../assets/icons/gulp.svg);
   }
-  &.img-11{
+  &.img-11 {
     background-image: url(../../assets/icons/html.svg);
   }
-  &.img-12{
+  &.img-12 {
     background-image: url(../../assets/icons/js.svg);
   }
-  &.img-13{
+  &.img-13 {
     background-image: url(../../assets/icons/json.svg);
   }
-  &.img-14{
+  &.img-14 {
     background-image: url(../../assets/icons/mobx.svg);
   }
-  &.img-15{
+  &.img-15 {
     background-image: url(../../assets/icons/mongodb.svg);
   }
-  &.img-16{
+  &.img-16 {
     background-image: url(../../assets/icons/netlify.svg);
   }
-  &.img-17{
+  &.img-17 {
     background-image: url(../../assets/icons/nodejs.svg);
   }
-  &.img-18{
+  &.img-18 {
     background-image: url(../../assets/icons/npm.svg);
   }
-  &.img-19{
+  &.img-19 {
     background-image: url(../../assets/icons/ps.svg);
   }
-  &.img-20{
+  &.img-20 {
     background-image: url(../../assets/icons/react.svg);
   }
-  &.img-21{
+  &.img-21 {
     background-image: url(../../assets/icons/react-router.svg);
   }
-  &.img-22{
+  &.img-22 {
     background-image: url(../../assets/icons/redux.svg);
   }
-  &.img-23{
+  &.img-23 {
     background-image: url(../../assets/icons/vs_code.svg);
   }
 }
 
 .grid--img .grid__item {
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	will-change: transform;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
 }
 
 .grid--img .grid__item-img {
-	flex: none;
-	width: calc(100% + 100px);
-	height: calc(100% + 100px);
-	will-change: transform;
+  flex: none;
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
+  will-change: transform;
 }
 
 /* Shorthand grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 
 .pos-1 {
-	grid-area: 34 / 35 / 39 / 32;
+  grid-area: 34 / 35 / 39 / 32;
 }
 .pos-2 {
-	grid-area: 24 / 21 / 30 / 23;
+  grid-area: 24 / 21 / 30 / 23;
 }
 .pos-3 {
-	grid-area: 9 / 25 / 15 / 21;
+  grid-area: 9 / 25 / 15 / 21;
 }
 .pos-4 {
-	grid-area: 36 / 16 / 42 / 23;
+  grid-area: 36 / 16 / 42 / 23;
 }
 .pos-5 {
-	grid-area: 35 / 8 / 42 / 11;
+  grid-area: 35 / 8 / 42 / 11;
 }
 .pos-6 {
-	grid-area: 29 / 26 / 34 / 29;
+  grid-area: 29 / 26 / 34 / 29;
 }
 .pos-7 {
-	grid-area: 25 / 30 / 19 / 33;
+  grid-area: 25 / 30 / 19 / 33;
 }
 .pos-8 {
-	grid-area: 5 / 38 / 11 / 41;
+  grid-area: 5 / 38 / 11 / 41;
 }
 .pos-9 {
-	grid-area: 13 / 44 / 19 / 46;
+  grid-area: 13 / 44 / 19 / 46;
 }
 .pos-10 {
-	grid-area: 5 / 31 / 11 / 34;
+  grid-area: 5 / 31 / 11 / 34;
 }
 .pos-11 {
-	grid-area: 29 / 42 / 34 / 46;
+  grid-area: 29 / 42 / 34 / 46;
 }
 .pos-12 {
-	grid-area: 17 / 17 / 22 / 20;
+  grid-area: 17 / 17 / 22 / 20;
 }
 .pos-13 {
-	grid-area: 44 / 14 / 50 / 17;
+  grid-area: 44 / 14 / 50 / 17;
 }
 .pos-14 {
-	grid-area: 45 / 22 / 48 / 26;
+  grid-area: 45 / 22 / 48 / 26;
 }
 .pos-15 {
-	grid-area: 45 / 28 / 50 / 32;
+  grid-area: 45 / 28 / 50 / 32;
 }
 .pos-16 {
-	grid-area: 5 / 26 / 11 / 29;
+  grid-area: 5 / 26 / 11 / 29;
 }
 .pos-17 {
-	grid-area: 3 / 11 / 9 / 15;
+  grid-area: 3 / 11 / 9 / 15;
 }
 .pos-18 {
-	grid-area: 6 / 15 / 11 / 19;
+  grid-area: 6 / 15 / 11 / 19;
 }
 .pos-19 {
-	grid-area: 25 / 36 / 28 / 39;
+  grid-area: 25 / 36 / 28 / 39;
 }
 .pos-20 {
-	grid-area: 15 / 6 / 20 / 10;
+  grid-area: 15 / 6 / 20 / 10;
 }
 .pos-21 {
-	grid-area: 15 / 38 / 21 / 41;
+  grid-area: 15 / 38 / 21 / 41;
 }
 .pos-22 {
-	grid-area: 27 / 13 / 33 / 16;
+  grid-area: 27 / 13 / 33 / 16;
 }
 .pos-23 {
-	grid-area: 42 / 38 / 48 / 42;
+  grid-area: 42 / 38 / 48 / 42;
 }
-
