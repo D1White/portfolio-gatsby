@@ -14,7 +14,7 @@ const Skills = () => {
     global.window = {}; 
   }
 
-  const mouse = useMouse(ref, {
+  const mouse = useMouse(document.body, {
     enterDelay: 100,
     leaveDelay: 100,
   });
